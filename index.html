@@ -593,7 +593,7 @@
     
     // Test bell using Web Audio / Audio
     function playBell(bellFileName) {
-    const baseUrl = "https://raw.githubusercontent.com/ges227rb-hue/bellsystem/main/assets/";
+    const baseUrl = "https://raw.githubusercontent.com/ges227rb-hue/bellsystem/main/assets/sounds/";
     const audio = new Audio(baseUrl + bellFileName);
     audio.play().catch(e => console.warn("Bell play error", e));
 }
