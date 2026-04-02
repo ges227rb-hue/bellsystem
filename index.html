@@ -593,10 +593,10 @@
     
     // Test bell using Web Audio / Audio
     function playBell(bellFileName) {
-        const baseUrl = "https://raw.githubusercontent.com/school-bells/repo/main/"; // placeholder github
-        const audio = new Audio(baseUrl + bellFileName);
-        audio.play().catch(e => console.warn("Bell play error, ensure file exists", e));
-    }
+    const baseUrl = "https://raw.githubusercontent.com/ges227rb-hue/bellsystem/main/assets/";
+    const audio = new Audio(baseUrl + bellFileName);
+    audio.play().catch(e => console.warn("Bell play error", e));
+}
     
     function initTestBellSelect() {
         const select = document.getElementById("testBellSelect");
